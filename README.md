@@ -15,11 +15,8 @@
 ### Windows:
 - `python -m venv [Name des venv Ordners]`
 ### Linux: 
-- `virtualenv [Name des venv Ordners]`
-    - wenn virtualenv noch nicht installiert ist
-        - `sudo apt-get install python3-pip`
-        - `sudo pip3 install virtualenv`
-    - Wenn das nicht funktioniert auf lokalen Ordner probieren auf dem man sicher alle Rechte hat und dann den ganzen Ordner kopieren
+- `python3 -m venv [Name des venv Ordners]`
+    - funktioniert nur auf Systemfestplatte
     
 ## Befehle um Virtual Environment zu aktivieren
 ### Windows:
