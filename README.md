@@ -2,6 +2,8 @@
 - pandas
 - numpy
 - matplotlip
+### oder
+- `pip install -r requirements.txt`
 
 ## Befehle um Virtual Environment zu erstellen
 ### Windows:
