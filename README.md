@@ -5,6 +5,12 @@
 ### oder
 - `pip install -r requirements.txt`
 
+## Verwendung
+- Clonen sie das Github-Repository auf Ihren PC.
+    - Dazu Git Bash öfnnen und zum gewünschten Ordner navigieren
+    - Führen sie folgende Befehl aus: git clone <Link des Repositorys>
+    - Öffnen Sie den Ordner in VS-Code
+
 ## Befehle um Virtual Environment zu erstellen
 ### Windows:
 - `python -m venv [Name des venv Ordners]`
@@ -24,4 +30,3 @@
         - Erlaubt alles zu installieren `Set-ExecutionPolicy Unrestricted -Scope CurrentUser`
 ### Linux:
 - `source [Name des venv Ordners]/bin/activate`
-
