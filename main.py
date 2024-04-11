@@ -15,5 +15,5 @@ plt.xlabel('Time/s')
 plt.ylabel('Power/W')
 plt.title('Power over Time')
 
-plt.savefig('figures\power_over_time.png')
+plt.savefig('figures/power_over_time.png')
 plt.show()
