@@ -1,5 +1,5 @@
 import numpy as np
-from sort import bubble_sort
+from sort import quickSort
 import matplotlib.pyplot as plt
 
 def load_data(file_path):
@@ -26,6 +26,6 @@ if __name__ == "__main__":
     data = load_data('activity.csv')
     power_W = data['PowerOriginal']
     print(power_W)
-    sorted_power_W = bubble_sort(power_W)
+    sorted_power_W = quickSort(power_W)
     print(sorted_power_W[::-1])
   
