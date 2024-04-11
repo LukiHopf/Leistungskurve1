@@ -27,5 +27,5 @@ if __name__ == "__main__":
     power_W = data['PowerOriginal']
     print(power_W)
     sorted_power_W = bubbleSort(power_W)
-    print(sorted_power_W[::-1])
+    print(sorted_power_W[::-1]) # Dreht array um, damit es von größtem zu kleinstem Wert sortiert ist
   

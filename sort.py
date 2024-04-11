@@ -21,7 +21,8 @@ def bubbleSort(arr):
         if not swapped:
             # wenn kein einziger Tausch stattgefunden hat
             # kann die Schleife abgebrochen werden
-            return
+            return arr # returned nur wenn kein Tausch stattgefunden hat
+    return arr # ohne return kann ich die Funktion nicht in load_data.py verwenden
 
 ''' Function to test the bubbleSort function
 # Driver code to test above
