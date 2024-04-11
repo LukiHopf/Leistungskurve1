@@ -1,53 +1,35 @@
-# link zur Funktion https://www.geeksforgeeks.org/python-program-for-quicksort/
-# Python program for implementation of Quicksort Sort
- 
-# This implementation utilizes pivot as the last element in the nums list
-# It has a pointer to keep track of the elements smaller than the pivot
-# At the very end of partition() function, the pointer is swapped with the pivot
-# to come up with a "sorted" nums relative to the pivot
- 
- 
-# Function to find the partition position
-def partition(array, low, high):
- 
-    # choose the rightmost element as pivot
-    pivot = array[high]
- 
-    # pointer for greater element
-    i = low - 1
- 
-    # traverse through all elements
-    # compare each element with pivot
-    for j in range(low, high):
-        if array[j] <= pivot:
- 
-            # If element smaller than pivot is found
-            # swap it with the greater element pointed by i
-            i = i + 1
- 
-            # Swapping element at i with element at j
-            (array[i], array[j]) = (array[j], array[i])
- 
-    # Swap the pivot element with the greater element specified by i
-    (array[i + 1], array[high]) = (array[high], array[i + 1])
- 
-    # Return the position from where partition is done
-    return i + 1
- 
-# function to perform quicksort
- 
- 
-def quickSort(array, low, high):
-    if low < high:
- 
-        # Find pivot element such that
-        # element smaller than pivot are on the left
-        # element greater than pivot are on the right
-        pi = partition(array, low, high)
- 
-        # Recursive call on the left of pivot
-        quickSort(array, low, pi - 1)
- 
-        # Recursive call on the right of pivot
-        quickSort(array, pi + 1, high)
- 
+# Bubblesort Algorithm
+# link zur Funktion https://www.geeksforgeeks.org/python-program-for-bubble-sort/
+
+def bubbleSort(arr):
+    n = len(arr)
+    # durch alle array elemente iterieren
+    for i in range(n-1):
+        # mit range(n) würde auch funktionieren
+        # doch die äußere Schleife würde einmal mehr wiederholt werden als nötig
+
+        # letztes i ELement ist schon bekannt
+        swapped = False
+        for j in range(0, n-i-1):
+            
+            # array von 0 bis n-i-1 durchlaufen
+            # wenn arr[j] größer als arr[j+1] ist, dann tauschen
+            if arr[j] > arr[j + 1]:
+                swapped = True
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+
+        if not swapped:
+            # wenn kein einziger Tausch stattgefunden hat
+            # kann die Schleife abgebrochen werden
+            return
+
+''' Function to test the bubbleSort function
+# Driver code to test above
+arr = [64, 34, 25, 12, 22, 11, 90]
+
+bubbleSort(arr)
+
+print("Sorted array is:")
+for i in range(len(arr)):
+    print("% d" % arr[i], end=" ")'''
+
